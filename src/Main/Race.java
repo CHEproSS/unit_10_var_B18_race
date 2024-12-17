@@ -1,9 +1,11 @@
+package Main;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class Race {
+public class Race {
     private List<Car> cars;
 
     public Race() {
@@ -12,6 +14,10 @@ class Race {
 
     public void addCar(int position, int speed) {
         cars.add(new Car(position, speed));
+    }
+
+    public int getAmountOfCarsInTheRace(){
+        return (this.cars.size());
     }
 
     public int countOvertakes() {
