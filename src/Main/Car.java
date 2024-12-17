@@ -1,4 +1,6 @@
-class Car {
+package Main;
+
+public class Car {
     private int position;
     private int speed;
 
